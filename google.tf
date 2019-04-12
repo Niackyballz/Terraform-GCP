@@ -1,9 +1,3 @@
-provider "google" {
-    credentials =   "${file("terraform-project-1d3464948416.json")}"
-    project     =   "terraform-project-237408"
-    region      =   "${var.region}"
-}
-
 resource "google_compute_network" "default" {
   name          =   "custom-network1"
   auto_create_subnetworks = "false"
