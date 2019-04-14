@@ -4,8 +4,12 @@ variable "region" {
 variable "zone" {
   default       =   "us-central1-a"
 }
-variable "Count" {
+variable "NodeCount" {
   type ="string"
-  default ="5"
+  default ="2"
   description = "Number of Nodes"
+}
+
+variable "sshkey" {
+  default = "../id_rsa_terraform-gcp.pub"
 }
